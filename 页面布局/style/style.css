@@ -1,0 +1,707 @@
+html{
+    width: 100%;
+    margin: 0;
+    font-size: 10px;
+}
+body,*{
+    padding: 0;
+    margin: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    font-family: Montserrat;
+}
+
+/*引入字体*/
+@font-face {
+    font-family: "Montserrat ExtraLight";
+    src: url("../fontfamily/Montserrat-ExtraLight.ttf");
+}
+@font-face {
+    font-family: "Montserrat Light";
+    src: url("../fontfamily/Montserrat-Light.otf");
+}
+/*分割线样式*/
+.divider{
+    width: 100%;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    background-color:rgba(20,20,20,0.102) ;
+}
+/*-------------------------------------第一部分header样式------------------------*/
+/*第一部分容器定位，样式*/
+header{
+    padding: 21rem 0;
+    width: 100%;
+
+    background-image: url("../image/Background1.png");
+    background-size: cover;
+
+    color: #FFFFFF;
+}
+
+/*大标题HelloWord*/
+header h1 {
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+
+    font-size: 6.2rem;
+    font-weight: lighter;
+}
+
+/*helloWord下的说明文字*/
+.explain-text{
+    padding: 8.8rem 26% 10rem;
+
+    text-align: center;
+
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.6;
+}
+
+/*注册表单框*/
+#sign-form{
+    margin: 0 20%;
+    padding: 5rem 8.76%;
+    width: 60%;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+/*form标题样式*/
+#sign-form h3{
+    text-align: center;
+
+    font-size: 1.6rem;
+    line-height: 3.6rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+/*form标题底下说明文字的样式*/
+.sign-explain{
+    text-align: center;
+
+    font-size: 1.2rem;
+    line-height: 3.2rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.302);
+}
+
+/*包含三个input的元素的P样式*/
+.sign-input{
+
+    width: 100%;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*三个input高度边距边框样式*/
+.sign-input input{
+
+    height: 5rem;
+    margin: 3.6rem 3.333% 0 0;
+
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 2px;
+}
+
+/*两个输入框样式*/
+.sign-input input[type="text"],
+.sign-input input[type="password"]{
+    width: 35%;
+    min-width: 11rem;
+    padding-left: 2rem;
+
+    background-color: transparent;
+
+    font-size: 1.4rem;
+    font-weight: lighter;
+    color: #ffffff;
+}
+
+/*密码框字符间距加大*/
+.sign-input input[type="password"]{
+    letter-spacing: 0.8em;
+
+}
+
+/*密码框placeholder字符间距*/
+.sign-input input[type="password"]::-webkit-input-placeholder {
+    letter-spacing: 0.1em;
+}
+.sign-input input[type="password"]::-ms-input-placeholder{
+    letter-spacing: 0.1em;
+}
+.sign-input input[type="password"]::-moz-placeholder{
+    letter-spacing: 0.1em;
+}
+
+.sign-input input[type="submit"]{
+    width: 13%;
+    min-width: 8rem;
+
+    font-size: 1.2rem;
+
+}
+
+/*鼠标hover时按钮样式*/
+.sign-input input[type="submit"]:hover{
+    background-color: rgba(255,255,255,0.1);
+    color:#FFFFFF;
+    box-shadow: 0 0 15px rgba(255,255,255,0.5);
+    border-color: transparent;
+}
+
+
+
+
+/*----------------------------第二部分Readme部分样式---------------------*/
+/*容器盒子定位*/
+#readme-box{
+    width: 100%;
+    margin: 9rem auto 0;
+    width: 73.125%;
+
+    color: rgb(20, 20, 20);
+}
+
+/*标题上的小字*/
+#readme-box .small-title{
+    margin: 0;
+
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+/*标题*/
+.readme-titile{
+    margin: 4rem auto;
+    width: 56.58%;
+
+    font-size: 4.2rem;
+    line-height: 1.238;
+    text-align: center;
+}
+/*内容盒子*/
+.objects-box{
+    margin-top: -4rem;
+    width:100%;
+    padding: 0 6% 8rem;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*四个小盒子的样式*/
+.objects-box div{
+    width: 37.43%;
+    margin-top: 8rem;
+}
+/*右边的盒子加上外边距*/
+.objects-box div:nth-child(2n){
+    /*margin-left: 14.017%;*/
+    margin-left: 25%;
+}
+/*四个图标*/
+.objects-box i{
+    display: inline-block;
+    float: left;
+    width: 17.124%;
+    height: 5rem;
+    background-size: auto 5rem;
+}
+.objects-box dl{
+    float: left;
+    width: 82.876%;
+}
+.objects-box dt{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.objects-box dd{
+    font-size: 1.6rem;
+    line-height: 1.625;
+    font-weight: lighter;
+}
+/*清除四个小盒子内的浮动*/
+.objects-box div::after{
+    content: "";
+    display: table-cell;
+    height: 0;
+    clear: both;
+}
+
+#mobile i{
+    background: url("../image/Iphone Icon.png") no-repeat;
+}
+#check i{
+    background: url("../image/Check Icon.png") no-repeat;
+}
+#pen i{
+    background: url("../image/Pencil Icon.png") no-repeat;
+}
+#setting i{
+    background: url("../image/Settings Icon.png") no-repeat;
+}
+
+
+
+
+/*---------------------------------------第三部分样式---------------------*/
+
+/*容器盒子样式*/
+#supporting{
+    padding: 18.5rem 19.69%;
+    width: 100%;
+    background: url("../image/Background2.png");
+    background-size: 100% 100%;
+    background-size: cover;
+    min-height: 60rem;
+
+    color: #FFFFFF;
+    font-weight: lighter;
+
+}
+
+/*标题*/
+#supporting h2{
+    font-size: 4.2rem;
+    line-height: 1.238;
+    text-align: left;
+
+    width: 35%;
+}
+
+/*标题下的文字*/
+#supporting p{
+    margin: 5rem 0;
+    font-size: 18px;
+    line-height: 1.556;
+    text-align: left;
+    width: 35%;
+}
+
+/*右边的两块div*/
+#supporting span:nth-child(2n){
+    margin-left: 3%;
+}
+
+/*两个按钮的样式*/
+#supporting a{
+    display: inline-block;
+    width: 22%;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+
+    font-size: 1.2rem;
+    line-height: 6rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    /*font-weight: normal;*/
+}
+#supporting a:link,
+#supporting a:visited{
+    color: #FFFFFF;
+}
+#supporting a:hover,
+#supporting a:active{
+    color: #000000;
+    background: #FFFFFF;
+    font-weight: normal;
+}
+
+
+
+/*-----------------------------------第四部分producs样式---------------------*/
+
+/*容器样式*/
+#products{
+    margin: 10rem 13.437%;
+}
+
+/*标题样式*/
+#products h2{
+    font-size: 4.2rem;
+    text-align: center;
+}
+
+/*三个logo图标样式*/
+#products img{
+    display: block;
+    height: 3rem;
+    margin: 0 auto;
+}
+
+/*装三个产品块的容器div*/
+#products > div{
+    width: 100%;
+    padding:8.5rem 6.25% 0;
+    display: flex;
+}
+
+/*三个小的内容div  */
+#products > div > div{
+    padding: 0 5.5% ;
+
+    font-size: 1.6rem;
+    line-height: 1.625;
+    text-align: center;
+    color: rgba(20, 20, 20, 0.702);
+}
+/*div内的文字*/
+#products > div > div p{
+    padding: 4rem 0 0;
+}
+
+
+/*---------------------------第五部分article样式---------------------------------*/
+/*容器样式*/
+#ourarticle{
+    width:73.125%;
+    margin:11.5rem auto;
+}
+
+/*上下两部分的容器盒子*/
+#ourarticle > div{
+    width: 100%;
+    padding: 0 8.547% ;
+    margin-top: 8rem;
+
+    display: flex;
+}
+
+#ourarticle img{
+    width:58.762%;
+}
+
+/*文字容器*/
+#ourarticle > div > div{
+    width: 30.927%;
+    padding-top: 6rem;
+}
+#bottom-article img{
+    margin-left: 10.309%;
+}
+
+/*图片文字调换顺序*/
+#top-article div{
+    order: 2;
+    margin-left: 10.309%;
+}
+#top-article img{
+    order: 1;
+}
+
+/*标题样式*/
+#ourarticle h3 a{
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+}
+/*内容*/
+#ourarticle p{
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    color: rgba(20, 20, 20, 0.702);
+    line-height: 1.75;
+    text-align: left;
+}
+
+
+
+/*----------------------------第六部分员工部分样式---------------------------------*/
+/*容器盒子*/
+#crew{
+    width: 60.625%;
+    margin: 10rem auto;
+}
+/*标题*/
+#crew > h2{
+    font-size: 4.2rem;
+    line-height: 1.238;
+    text-align: center;
+}
+#crew > p{
+    margin: 3.5rem auto;
+
+    font-size: 1.8rem;
+    color: rgba(20, 20, 20, 0.702);
+    line-height: 1.556;
+    text-align: center;
+    width: 71.44%;
+}
+/*包裹四个员工盒子的大容器*/
+#crew > div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*员工盒子*/
+.crew-box{
+    width: 48.45%;
+    margin-bottom: 3rem;
+
+    position: relative;
+}
+/*右边的员工盒子*/
+.crew-box:nth-child(2n){
+    margin-left: 3.093%;
+}
+/*图片与信息*/
+.crew-box div,
+.crew-box img{
+    width: 100%;
+}
+.crew-box div{
+    opacity: 0;
+    transition:opacity 1s;
+
+
+    position: absolute;
+    padding: 11rem 0;
+    height: 100%;
+
+    text-align: center;
+    color: #ffffff;
+
+
+    border-radius: 2px;
+    background-color: rgb(20, 20, 20);
+    /*opacity: 0.651;*/
+}
+.crew-box div h3{
+    font-size: 2rem;
+    line-height: 1.6;
+}
+.crew-box div p:nth-child(2){
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    line-height: 2.333;
+}
+.crew-box i{
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background-size: 100% 100%;
+    margin: 6.383%;
+
+}
+.facebook{
+    background: url("../image/Facebook.png") no-repeat;
+}
+.twitter{
+    background: url("../image/Twitter.png") no-repeat;
+}
+.ins{
+    background: url("../image/Instagram.png") no-repeat;
+}
+
+.crew-box:hover div{
+    opacity: 0.651;
+    transition:opacity 1s;
+}
+
+
+/*-----------------------------第七部分练习我们样式---------------------------------*/
+#contact{
+    width: 60.625%;
+    margin: 0 auto;
+    padding: 7rem 0;
+
+    display: flex;
+    flex-wrap: nowrap;
+}
+#contact > div:nth-child(1){
+    width: 48.45%;
+    padding: 5rem;
+
+    border: solid rgba(20, 20, 20,0.102) 1px;
+    border-radius: 1rem;
+}
+#contact > div:nth-child(2){
+    width: 37.94%;
+}
+#contact > div:nth-child(1) h4{
+    margin-bottom: 4.2rem;
+
+    font-size: 1.6rem;
+    color: rgb(20, 20, 20);
+    text-transform: uppercase;
+    line-height: 2;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+#contact > div:nth-child(1) input,
+#contact > div:nth-child(1) textarea{
+    height: 5rem;
+    display: block;
+    width: 100%;
+    margin-top: 3rem;
+
+    font-size: 1.4rem;
+    color: rgba(20, 20, 20, 1);
+    line-height: 1.857;
+    text-indent: 2rem;
+
+    border: 1px rgba(20, 20, 20, 0.202) solid;
+    border-radius: 4px;
+
+}
+#contact > div:nth-child(1) textarea{
+    height: 15.5rem;
+    padding-top: 1rem;
+    resize:none;
+}
+#contact > div:nth-child(1) input[type="submit"] {
+    background-color: rgb(20, 20, 20);
+
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    text-indent: 0;
+}
+#contact > div:nth-child(1) input[type="submit"]:hover{
+    box-shadow: gray 0 0 10px;
+    border: white 1px solid;
+}
+
+#contact > div:nth-child(2){
+    margin-left: 13.4%;
+    padding-top: 8.8rem;
+}
+#contact > div:nth-child(2) h3{
+    font-size: 4.2rem;
+    color: rgb(20, 20, 20);
+    line-height: 1.238;
+    text-align: left;
+}
+#contact > div:nth-child(2) p{
+    margin: 3.8rem 0 7.4rem;
+    font-size: 1.6rem;
+    color: rgba(20, 20, 20, 0.702);
+    line-height: 1.625;
+}
+
+#contact > div:nth-child(2) div{
+    margin: 3rem 0;
+
+    font-size: 1.6rem;
+    color: rgb(20, 20, 20);
+    line-height: 1.625;
+}
+
+#contact > div:nth-child(2) div i{
+    display: inline-block;
+    vertical-align: top;
+
+    height: 2rem;
+    width: 2rem;
+}
+#contact > div:nth-child(2) div span{
+    display: inline-block;
+
+    margin-top: -0.5rem;
+    padding-left: 1rem;
+}
+.position i{
+    background: url("../image/Map Icon.png") no-repeat;
+}
+.tell i{
+    background: url("../image/Phone Icon.png") no-repeat;
+}
+.email i{
+    background: url("../image/Mail Icon.png") no-repeat;
+}
+
+
+/*---------------------------------footer部分样式---------------------------------*/
+footer{
+    color: white;
+    padding: 9rem 13.4375%;
+    margin: 0 auto;
+    background-color: black;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+footer h3{
+    margin-bottom: 3rem;
+
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 2;
+    text-align: left;
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+}
+footer div:nth-child(4) > a{
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 1.556;
+}
+
+footer a{
+    display: block;
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.302);
+    line-height: 2.875;
+    text-align: left;
+}
+footer a:link,
+footer a:visited{
+    text-decoration: none;
+}
+footer a:hover,
+footer a:visited{
+    text-decoration: underline;
+}
+footer p{
+    margin-top: 4rem;
+}
+footer p a{
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 2rem;
+}
+.twitter-icon{
+    background: url("../image/Twitter Icon.png") no-repeat;
+}
+.facebook-icon{
+    background: url("../image/Facebook Icon.png") no-repeat;
+}
+.google-icon{
+    background: url("../image/Google Icon.png") no-repeat;
+}
+.tumbler-icon{
+    background: url("../image/Tumbler Icon.png") no-repeat;
+}
+.pinterest-icon{
+    background: url("../image/Pinterest Icon.png") no-repeat;
+}
+.linkedin-icon{
+    background: url("../image/LinkedIn Icon.png") no-repeat;
+}
+
+
